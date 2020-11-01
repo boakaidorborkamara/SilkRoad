@@ -1,0 +1,247 @@
+html{
+    box-sizing: border-box;
+    font-size: 100%;
+}
+body{
+    margin: 0px;
+    padding: 0px;
+    line-height: 1.3em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background:url(../Images/bg);
+    background-repeat: no-repeat;
+    background-size: inherit;
+}
+
+/*begining of header styling*/
+.navContainer{
+    width: 80%;
+    margin: 0px auto;
+}
+
+header{
+    
+    height: 15vh;
+    background-color: rgba(27, 25, 25, 0.9);
+    padding: 10px;
+    margin-bottom: 100px;
+}
+
+.navContent{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 15vh;
+}
+
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    padding: 25px;
+    background-color: black;
+    font-weight: bolder;
+    margin-right: 20px;
+}
+
+nav{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 10px;
+}
+
+nav .upperNav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: white solid 1px;
+    padding-bottom: 15px;
+}
+
+.upperLeftSection a{
+    margin-right: 30px;
+}
+
+.upperRightSection .regbolder{
+    padding-left: 10px;
+    border-left: solid white 1px;
+}
+
+
+nav .lowerNav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 15px;
+}
+
+.lowerLeft a{
+    font-weight: bold;
+}
+
+.lowerLeft span{
+    color: gray;
+    padding-right: 7px;
+}
+
+.lowerLeft .gtSign{
+    color: white;
+}
+
+.lowerRight button{
+    padding: 5px 30px 5px 30px;
+    border-radius: 7px;
+    background-color:#4169e1;
+    color: white;
+    outline: 0px;
+    border: 0px;
+    font-weight: bold;
+}
+
+.lowerRight button:hover{
+    padding: 5px 30px 5px 30px;
+    border-radius: 7px;
+    background-color:white;
+    color: #4169e1;
+}
+
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+li{
+    float: left;
+}
+ 
+ /*Header styling ends here*/
+
+ main{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     background-color: rgba(0, 0, 0,0.8);
+     width: 60vw;
+     height: 40vh ;
+     margin: 0px auto;
+     padding: 25px;
+     border: 1px solid white;
+ }
+
+ .callToAction{
+     color: white;
+     padding: 10px;
+ }
+
+ .callToAction button{
+    padding: 5px 35px 5px 35px;
+    border-radius: 7px;
+    border: 1px solid white;
+    background-color: black;
+    font-weight: bold;
+    color: white;
+ }
+
+ form{
+     background-color: white;
+     color: black;
+     padding: 20px;
+     height: 50vh;
+ }
+
+ form h2{
+     margin-bottom: 40px;
+ }
+
+ form select{
+     padding: 5px;
+     background-color: #708090;
+     color: white;
+     outline: 0px; 
+     width: 20%;
+     margin-bottom: 20px;
+ }
+
+ form select:hover{
+    background-color:#32b8b1;
+}
+
+ form option{
+     background-color:#708090;
+     color: white;
+     padding: 5px;
+ }
+
+ input[type=tel]{
+    padding: 5px;
+    width: 74%;
+    outline: 0px;
+    border: 0px;
+    background-color:#d7dce2;
+ }
+
+ input[type=password]{
+    padding: 5px;
+    width: 95%;
+    background-color: #d7dce2;
+    outline: 0px;
+    border: 0px;
+ }
+
+
+ form p{
+     text-align: right;
+     font-weight: bold;
+ }
+
+ form p a{
+    color: #32b8b1;
+ }
+
+ form img{
+     width:20px;
+     margin-left: 15px;
+ }
+
+ form input[type="submit"]{
+    padding: 5px 60px 5px 60px;
+    border-radius: 7px;
+    background-color: #708090;
+    color: white;
+    outline: 0px;
+    border: 0px;
+    font-weight: bold;
+    margin-left: 150px;
+    display: block;
+ }
+
+ form input[type="submit"]:hover{
+    padding: 5px 60px 5px 60px;
+    border-radius: 7px;
+    background-color: #1b2229;
+    color: white;
+    outline: 0px;
+    border: 0px;
+    font-weight: bold;
+    margin-left: 150px;
+    display: block;
+ }
+
+ .SocialMediaLogin{
+     display: flex;
+     align-items: center;
+     text-align: left;
+     margin-top: 20px;
+ }
+
+ .SocialMediaLogin p{
+     font-weight: normal;
+ }
+ 
+
+
+
+    
+
