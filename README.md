@@ -1,4 +1,4 @@
-# SILROAD website project
+# SILKROAD website project
 
 This frontend development project is done to excercise and put to use the knowlege gained from the Kwagei Innovater Training, while still in the third week.
 
