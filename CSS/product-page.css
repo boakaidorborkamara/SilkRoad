@@ -114,58 +114,6 @@ header li{
  /*Header styling ends here*/
 
 
-.viewbar{
-    display: flex;
-    background-color:#e8e8e8;
-    justify-content: space-between;
-    align-items: center;
-    width: 63%;
-    height: 50px;
-    position: relative;
-    top: 50px;
-    left: 124px;
-    margin: 0px auto;
-}
-
-.viewbar li{
-    list-style-type: none;
-    float: left;
-    margin-right: 15px;
-    padding-left: 30px; 
-}
-
-.rightMenu{
-    display: flex;
-    padding-right: 30px;
-    width: 40%;
-}
-
-.rightMenu .view{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.view img{
-    margin-left: 15px;
-}
-
-.rightMenu .sortBy{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: 30px;
-    width: 100%;
-}
-
-.sortBy select{
-        width: 70%;
-        padding: 5px;
-        margin-left: 5px;
-        border: 0px;
-        outline: 0px;
-        background-color:#f5f5f5;
-}
 
  .bodyContainer{
     display: grid;
@@ -182,6 +130,7 @@ header li{
      background-color:#d7dce2;
      padding: 10px;
      height: 400px;
+     margin-top: 20px;
  }
 
  .leftSide input[type=search]{
@@ -218,99 +167,132 @@ header li{
  .center{
      display: flex;
      flex-direction: column;
-     padding-top: 70px;
+     padding-top: 20px;
  }
 
- .center>div{
-     background-color: white;
+ .product-image{
      width: 100%;
-     height: 20%;
-     margin-bottom: 15px;
-     border: 1px solid #708090;
- }
-
- .aptDetail{
-     display: flex;
-     justify-content: space-evenly;
-     align-content: center;
- }
-
- .aptDetail .picArea{
-    background-color: white;
- }
-
- .picArea{
-     width: 40%;
- }
-
- .picArea img{
-     width: 100%;
-     height: 100%;
-     object-fit: cover;
-     display: block;
- }
-
-
- .picArea img:hover{
-    opacity: 0.7;
-}
-
-
-
-
-
- .aptDetail .infoSection{
-     display: flex;
-     flex-direction: column;
-     justify-content: center;
-     margin-left: 20px;
-     margin-top: 40px;
-     /* font-size: small; */
-     width: 60%;
+     height: 360px;
+     background-color: olivedrab;
      
  }
 
- .upperStockDetail{
+.product-image img{
+     width: 100%;
+     height: 100%;
+     margin: 0px;
+     padding: 0px;
+ }
+
+ .small-image-container{
+     height: 20%;
+     background-color: black;
+     /* background-color: rgba(0,0,0,0.80); */
+     display: grid;
+     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+     grid-gap: 5px;
+     justify-content: center;
+     align-items: center;
+     justify-content: space-evenly;
+     /* position: relative; */
+     bottom: 25px;
+     margin: 0px;
+     padding: 0px;
+     
+ } 
+
+ .small-image-container div{
+     background-color: white;
+     height: 80%;
+     width: 90%;
+     justify-self: center;
+     /* margin-right:5px; */
+ }
+
+ .small-image{
+     width: 100%;
+     height: 100%;
+ }
+
+ #progress-dot{
      display: flex;
+     justify-content: center;
+     align-items: center;
+     margin-top: 85px;
+     margin-bottom: 15px;
  }
 
- .upperStockDetail .price{
-     background-color: #40afad;
-     color: white;
-     margin-left: 42px;
-     padding: 5px;
-     font-size: large;
+ #progress-dot .rounded-dot{
+     width: 8px;
+     height: 8px;
+     background-color: none;
+     border: 1px solid cadetblue;
+     border-radius: 50%;
+     margin-left: 10px;
  }
 
- .aptDetail .stockDetail{
+ .house-name-n-price{
+     display: flex;
+     margin-bottom: 20px;
+ }
+
+ .detail{
+     margin-right: 30px;
+ }
+
+ .price{
      display: inline-flex;
-     margin-top:20px;
+     height: 50%;
+     background-color: cadetblue;
+     color: white;
+     padding: 6px;
  }
-.stockDetail div{
-    display: inline-flex;
-    width: 50px;
-    justify-content: center;
-    border: 1px solid #708090;
-    border-bottom: 0px;
-    padding: 10px 30px 10px 30px;
-}
 
-.loadMore{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 30px;
-}
+ #small-detail{
+     display: flex;
+     margin-top: 15px;
+     margin-bottom: 15px;
+ }
 
-.loadMore button{
-    padding: 5px 30px 5px 30px;
-    border-radius: 7px;
-    background-color: #708090;
-    color: white;
-    outline: 0px;
-    border: 0px;
-    font-weight: bold;
-}
+ #small-detail div{
+     margin-right: 25px;
+ }
+
+ .btn-area{
+     margin-bottom: 20px;
+ }
+
+ .btn-area button{
+     padding: 10px 15px 10px 15px;
+     display: inline-block;
+     margin-right: 20px;
+     background-color: gray;
+     color: white;
+     border: none;
+     cursor: pointer;
+ }
+
+ h3{
+     margin-bottom: 10px;
+ }
+
+ .property-description{
+     margin-bottom: 15px;
+ }
+
+ .available-amenties{
+     margin-bottom: 20px;
+ }
+
+ .all-amenties{
+     display: flex;
+     justify-content: space-between;
+ }
+
+ li{
+     list-style-type: none;
+     margin-bottom: 10px;
+ }
 
 .rightSide{
     background-color: white;
@@ -318,8 +300,10 @@ header li{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 70px;
+    margin-top: 20px;
 }
+
+
 
  footer{
      display: flex;

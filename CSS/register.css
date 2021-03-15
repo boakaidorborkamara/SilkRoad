@@ -1,15 +1,19 @@
 html{
     box-sizing: border-box;
     font-size: 100%;
+    height: 100%;
 }
 body{
     margin: 0px;
     padding: 0px;
     line-height: 1.3em;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* backup image */
     background:url(../Images/bg);
+    /* active image  */
+    background: linear-gradient(to left, rgba(0,0,0,0.60), rgba(0,0,0,0.30)),url(../Images/bg);
     background-repeat: no-repeat;
-    background-size: inherit;
+    background-size: cover;
 }
 
 /*begining of header styling*/
@@ -23,7 +27,6 @@ header{
     height: 15vh;
     background-color: rgba(27, 25, 25, 0.9);
     padding: 10px;
-    margin-bottom: 100px;
 }
 
 .navContent{
@@ -118,12 +121,19 @@ li{
  
  /*Header styling ends here*/
 
+ #mainWrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 85vh;
+}
+
  main{
      display: flex;
      justify-content: center;
      align-items: center;
      background-color: rgba(0, 0, 0,0.8);
-     width: 60vw;
+     width: 850px;
      height: 40vh ;
      margin: 0px auto;
      padding: 25px;
@@ -157,13 +167,15 @@ li{
  form{
      background-color: white;
      color: black;
-     padding: 20px;
+     padding: 30px;
+     width: 300px;
      height: 50vh;
      order: 2;
+     margin-right: 25px;
  }
 
  form h2{
-     margin-bottom: 40px;
+     margin-bottom: 30px;
  }
 
  form select{
@@ -185,26 +197,49 @@ li{
      padding: 5px;
  }
 
- input[type=tel]{
-    padding: 5px;
-    width: 74%;
+ input[type=text]{
+    padding:7px 5px 7px 5px;
+    width: 97%;
     outline: 0px;
     border: 0px;
+    background-color:#d7dce2;
+    margin-bottom: 20px;;
+ }
+
+
+ input[type=tel]{
+    padding: 5px;
+    width: 75%;
+    outline: 0px;
+    border: 0px;
+    padding:7px 5px 7px 5px;
     background-color:#d7dce2;
  }
 
  input[type=password]{
     padding: 5px;
-    width: 95%;
+    width: 97%;
     background-color: #d7dce2;
     outline: 0px;
     border: 0px;
+    padding:7px 5px 7px 5px;
+    margin-bottom: 20px;
  }
 
+ form label{
+     font-size: small;
+     margin-bottom: 20px;
+     margin-left:63px;
+ }
+
+ form span{
+     font-weight: bold;
+ }
 
  form p{
      text-align: right;
      font-weight: bold;
+     font-size: small;
  }
 
  form p a{
@@ -224,8 +259,9 @@ li{
     outline: 0px;
     border: 0px;
     font-weight: bold;
-    margin-left: 150px;
-    display: block;
+    margin-left: 122px;
+    display: inline-block;
+    margin-top: 20px;
  }
 
  form input[type="submit"]:hover{
@@ -244,7 +280,7 @@ li{
      display: flex;
      align-items: center;
      text-align: left;
-     margin-top: 20px;
+     margin-top: 10px;
  }
 
  .SocialMediaLogin p{
